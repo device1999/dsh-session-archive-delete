@@ -1,0 +1,56 @@
+{
+  "name": "dsh-session-archive-delete",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "给 DeepSeek Harness 的会话列表加一个安全的删除入口：先完整备份到本地、校验通过后再删除，支持子代理会话级联处理与自定义备份位置。",
+  "license": "MIT",
+  "author": "",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./assets/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "session",
+    "delete",
+    "backup",
+    "archive",
+    "cleanup"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-primitives"
+      ]
+    }
+  },
+  "engines": {
+    "node": "^20.0.0 || >=22.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/device1999/dsh-session-archive-delete.git"
+  },
+  "homepage": "https://github.com/device1999/dsh-session-archive-delete#readme",
+  "bugs": {
+    "url": "https://github.com/device1999/dsh-session-archive-delete/issues"
+  }
+}
