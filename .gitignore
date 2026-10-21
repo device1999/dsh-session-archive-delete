@@ -1,0 +1,28 @@
+# 依赖与构建产物
+node_modules/
+dist/
+*.tgz
+
+# 本地设置与日志
+.dsh-archive-delete.json
+dsh-archive-delete.log
+*.log
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 备份产物（别提交）
+DSH-归档会话/
+
+# 临时文件
+*.tmp
+*.bak
+*.bak-*
+
+# 1024 市场条目（已提交到 catalog 仓库，不重复上传）
+catalog-entry.json
+
