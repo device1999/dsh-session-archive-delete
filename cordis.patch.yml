@@ -1,6 +1,7 @@
-# Bundle patch layer: 把 dsh-session-archive-delete 插入 profile 的插件行。
-# 客户端脚本不走 dsh.client，而由宿主半通过 webserver/index-inject 以 <script> 注入
-# （与 dsh-local-patches / dsh1024 同一种机制）。
+# Bundle patch layer: 把 @device1999/dsh-session-archive-delete 插入 profile 的插件行。
+# 客户端半侧走标准 dsh.client 声明（package.json 里的 dsh.client + exports["./client"]），
+# 不要再用 webserver/index-inject 追加 <script>，否则同一 factory 会被注册两次，
+# 触发 "duplicate factory registration"，导致 web boot 失败。
 - insert:
-    - id: dsh-session-archive-delete
-      name: dsh-session-archive-delete
+    - id: '@device1999/dsh-session-archive-delete'
+      name: '@device1999/dsh-session-archive-delete'

@@ -2,7 +2,9 @@
 
 给 DeepSeek Harness（DSH）的会话列表加一个安全的「删除」入口：**先完整备份到本地，校验通过后才删除**。
 
-装上之后，在侧栏任意会话的「…」菜单最下方会多出删除选项。
+装上之后，在侧栏任意会话的「…」菜单最下方会多出删除选项：
+
+<img src="assets/screenshot-menu.png" width="200" alt="会话菜单">
 
 ## 为什么需要它
 
@@ -31,6 +33,8 @@ DSH 只有「归档」，没有删除。想真正释放磁盘空间就得手动�
 | 路径校验 | 无效路径当场提示，不会写入设置 |
 | 一键恢复 | 每个备份文件夹带 `RESTORE.txt`，按说明复制回去即可 |
 
+<img src="assets/screenshot-settings.png" width="720" alt="设置页">
+
 ## 安装
 
 ### 方式一：在 DSH 界面里装（推荐）
@@ -38,7 +42,7 @@ DSH 只有「归档」，没有删除。想真正释放磁盘空间就得手动�
 左侧栏 **插件** → 右上角 **添加插件** → 输入包名安装：
 
 ```
-dsh-session-archive-delete
+@device1999/dsh-session-archive-delete
 ```
 
 装完重启 DSH。
@@ -46,7 +50,7 @@ dsh-session-archive-delete
 ### 方式二：命令行
 
 ```bash
-dsh plugin --profile <profile> add dsh-session-archive-delete
+dsh plugin --profile <profile> add @device1999/dsh-session-archive-delete
 ```
 
 `<profile>` 通常是 `desktop` 或 `web`，可在 `~/.dsh/profiles/` 下看到。

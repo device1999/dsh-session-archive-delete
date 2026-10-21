@@ -1,11 +1,11 @@
 window.__ModuleLoader__.load({
-  id: 'dsh-session-archive-delete',
+  id: '@device1999/dsh-session-archive-delete',
   factory: (require) => {
     const module = { exports: {} }
     const exports = module.exports
 
     const React = require('react')
-    const NS = 'dsh-session-archive-delete'
+    const NS = '@device1999/dsh-session-archive-delete'
 
     // 官方组件库：菜单项图标与按钮样式都从这里取，保证和原生菜单项同源、同尺寸、同对齐
     let primitives = {}
