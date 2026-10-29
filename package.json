@@ -1,8 +1,8 @@
 {
   "name": "@device1999/dsh-session-archive-delete",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "type": "module",
-  "description": "给 DeepSeek Harness 的会话列表加一个安全的删除入口：先完整备份到本地、校验通过后再删除，支持子代理会话级联处理与自定义备份位置。",
+  "description": "给 DeepSeek Harness 的会话列表加安全的会话删除入口：删除会话前先完整备份到本地、校验通过后再删，支持子代理会话级联处理与自定义备份位置。",
   "license": "MIT",
   "author": "",
   "main": "lib/index.js",
@@ -24,10 +24,20 @@
     "dsh",
     "dsh-plugin",
     "session",
-    "delete",
+    "session-delete",
+    "delete-session",
+    "session-cleanup",
+    "session-cleaner",
+    "remove-session",
     "backup",
     "archive",
-    "cleanup"
+    "cleanup",
+    "disk-space",
+    "subagent",
+    "会话删除",
+    "删除会话",
+    "清理会话",
+    "备份删除"
   ],
   "dsh": {
     "bundle": {

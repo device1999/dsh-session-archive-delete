@@ -2,6 +2,15 @@
 
 本项目遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [0.1.3] - 2026-10-29
+
+### 变更
+
+- 扩展 keywords：新增 `session-delete` / `delete-session` / `session-cleanup`
+  / `remove-session` 等英文词，以及「会话删除」「删除会话」「清理会话」
+  「备份删除」四个中文词
+- 包描述改用「会话删除」说法，让 npm 搜索与市场条目覆盖该查询
+
 ## [0.1.2] - 2026-10-28
 
 ### 变更
