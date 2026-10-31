@@ -159,4 +159,4 @@ MIT
 
 ## 关键词
 
-会话删除；删除会话；清理会话；备份删除；彻底删除；会话管理；释放磁盘空间；子代理会话；session-delete；delete-session；session-cleanup；session-cleaner；remove-session；dsh-session；subagent；deepseek-harness；dsh；dsh-plugin；session；delete；backup；archive；cleanup。
+会话删除；删除会话；清理会话；备份删除；彻底删除；会话管理；释放磁盘空间；子代理会话；session-delete；delete-session；session-cleanup；session-cleaner；remove-session；dsh-session；disk-space；subagent；deepseek-harness；dsh；dsh-plugin；session；delete；backup；archive；cleanup。
